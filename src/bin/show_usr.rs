@@ -15,11 +15,10 @@ fn main() {
                      .load::<Usr>(&connection)
                      .expect("Error loading usr");
 
-    println!("Displaying {} posts", results.len());
+    println!("Displaying {} usr", results.len());
     for u in results {
-        println!("{}", u.id);
-        println!("----------\n");
-        println!("{}", u.name);
+        println!("{} {}", u.id, u.name);
+        println!("---------------------\n");
     }
 }
 
