@@ -7,6 +7,7 @@ pub struct Usr {
     pub name : String,
     pub created_at : SystemTime,
     pub updated_at : SystemTime,
+    pub active : bool
 }
 
 #[derive(Insertable)]

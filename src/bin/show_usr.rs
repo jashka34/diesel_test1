@@ -16,8 +16,9 @@ fn main() {
                      .expect("Error loading usr");
 
     println!("Displaying {} usr", results.len());
+    println!("---------------------\n");
     for u in results {
-        println!("{} {}", u.id, u.name);
+        println!("{} {} {}", u.id, u.name, u.active);
         println!("---------------------\n");
     }
 }
